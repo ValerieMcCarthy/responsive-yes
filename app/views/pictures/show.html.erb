@@ -1,0 +1,12 @@
+<%= link_to "Home", pictures_path %>
+
+<h1>Picture Profile Page</h1>
+
+<h3>
+Name: <%= @picture.name %> <br>
+Description: <%= @picture.description %> <br>
+Owner: <%= @picture.owner %> <br>
+URL:  <%= @picture.url %> <br>
+
+
+<img alt="<%= @picture.name %>" src="/assets/<%= @picture.url %>" width="1000"/>

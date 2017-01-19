@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ResponsiveNone</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <nav>
+  <br>
+  <h3>
+	<%= link_to "Home", pictures_path %>  <a href="/pictures#mccarthy">McCarthy Family Photos</a>  <a href="/pictures#hasselbring">Hasselbring Family Photos</a>
+	</h3>
+	<br> <br>
+	</nav>
+    <%= yield %>
+  </body>
+</html>
