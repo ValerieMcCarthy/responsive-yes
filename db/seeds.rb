@@ -18,3 +18,13 @@ picture_5 = Picture.create(name: "Valerie Headshot", description: "Valerie sitti
 
 picture_6 = Picture.create(name: "Yale Studying", description: "Yale pondering the world on Barry's backpack", owner: "Katie", url: "yale_studying.jpg")
 
+picture_7 = Picture.create(name: "Eric and Friend", description: "Eric and Friend at the game", owner: "Dad", url: "e.jpg")
+
+picture_8 = Picture.create(name: "Eric and Family", description: "Eric and Family on the Beach", owner: "Lifeguard", url: "fam.jpg")
+
+picture_9 = Picture.create(name: "Eric Headshot", description: "Great headshot of Eric", owner: "Dad", url: "headshot.jpg")
+
+picture_10 = Picture.create(name: "Toby", description: "Togy being silly", owner: "Eric", url: "toby.jpg")
+
+
+

@@ -1,16 +1,22 @@
-<h1>Family Pictures</h1>
+<h1>Family Pictures in a Responsive World</h1>
 
-<div>This page lists some random photos from the McCarthy family. They come from the last few years, they are from all over the world, and they include multi generations - of both humans and are beloved pets.</div>
+<div>This page lists some random photos from the McCarthy and Hasselbring families. These photos come from the last few years, they are from all over the world, and they include multi generations - of both humans and are beloved pets.</div>
+<br>
+<br>
+
 
 <!-- looping through McCarthy pictures -->
-<h3>McCarthy Family Pictures</h3>
 <div id=mccarthy >
-<% @pictures.each do |picture| %>
-
-	<%= link_to image_tag("/assets/mccarthy/#{picture.url}", width: '500', alt: '#{picture.name}'), picture_path(picture) %>
-
-
-<% end %>
+<h3>McCarthy Family Pictures</h3>
+	<div class="row align-top padding">
+		<% @pictures.each do |picture| %>
+			<% if picture.id <= 6 %>
+				<div class="small-6 columns padding">
+				<%= link_to image_tag("/assets/mccarthy/#{picture.url}", alt: '#{picture.name}'), picture_path(picture) %>
+				</div>
+			<% end %>
+		<% end %>
+	</div>
 </div>
 
 <br>
@@ -20,13 +26,20 @@
 <!-- looping through Hasselbring pictures -->
 <div id=hasselbring >
 <h3>Hasselbring Family Pictures</h3>
-<% @pictures.each do |picture| %>
 
-	<%= link_to image_tag("/assets/hasselbring/#{picture.url}", width: '500', alt: '#{picture.name}'), picture_path(picture) %>
-
-
-<% end %>
+		<div class="row align-top padding">
+		<% @pictures.each do |picture| %>
+			<% if picture.id > 6 %>
+				<div class="small-6 columns padding">
+				<%= link_to image_tag("/assets/hasselbring/#{picture.url}", alt: '#{picture.name}'), picture_path(picture) %>
+				</div>
+			<% end %>
+		<% end %>
+	</div>
 </div>
+
+<br>
+<br>
 
 <br>
 <br>
